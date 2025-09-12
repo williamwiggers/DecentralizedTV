@@ -1,97 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DecentralizedTV</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DCTV — DecentralizedTV • 24/7 Crypto Radio</title>
+  <meta name="description" content="24/7 decentralized crypto radio. Open curation. Community-driven.">
+  <meta property="og:title" content="DecentralizedTV (DCTV) — 24/7 Crypto Radio">
+  <meta property="og:description" content="Open curation. Community-driven. Crypto voices 24/7.">
+  <meta property="og:image" content="https://placehold.co/1200x600/0b0b0f/7c3aed?text=DecentralizedTV">
+  <meta name="theme-color" content="#0b0b0f" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #111;
-      text-align: center;
+    :root{
+      --bg:#0b0b0f; --panel:#111218; --card:#151727; --muted:#9aa3b2; --text:#eef2f7;
+      --brand:#7c3aed; --accent:#00e5ff; --ring:rgba(124,58,237,.25);
     }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 2rem 1rem;
-    }
-    h1 { margin: 0; font-size: 2.5rem; }
-    section { padding: 3rem 1rem; }
-    .section-banner {
-      max-width: 400px;
-      margin: 0 auto 1.5rem;
-      display: block;
-    }
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-    .social-links img {
-      width: 40px;
-      height: 40px;
-      transition: transform 0.2s;
-    }
-    .social-links img:hover {
-      transform: scale(1.1);
-    }
-    footer {
-      background: #111;
-      color: #fff;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+    .logo{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--accent));box-shadow:0 10px 30px var(--ring)}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;font-weight:700;border:1px solid rgba(255,255,255,.08);background:transparent}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--accent));color:#0b0b0f;border:none}
+    .hero{padding:60px 20px;text-align:center}
+    .hero img{width:100%;border-radius:16px;margin-top:20px}
+    .title{font-size:clamp(32px,5.4vw,56px);line-height:1.02;margin:0;font-weight:800;letter-spacing:-.02em}
+    .grad{background:linear-gradient(135deg,#fff,#bda6ff 40%,#00e5ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .subtitle{margin:12px auto 18px;color:#d7dbe6;max-width:760px;font-size:clamp(15px,2vw,18px)}
+    .section{margin:36px 0}
+    .panel{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .muted{color:var(--muted)}
+    .img{width:100%;border-radius:12px;border:1px solid rgba(255,255,255,.06)}
+    footer{margin:40px 0 24px;text-align:center;color:var(--muted);font-size:14px}
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>DecentralizedTV</h1>
-    <p>The first 24/7 crypto radio/TV made by the community</p>
+  <header class="container nav">
+    <div class="brand">
+      <div class="logo"><strong>D</strong></div>
+      <div>Decentralized<span style="color:#a6adff">TV</span></div>
+    </div>
+    <nav style="display:flex;gap:10px;align-items:center">
+      <a class="btn" href="#why">Why</a>
+      <a class="btn" href="#governance">Governance</a>
+      <a class="btn primary" href="#" id="listen">▶ Listen Live</a>
+    </nav>
   </header>
 
-  <!-- Community Governance -->
-  <section id="governance">
-    <img src="assets/community-governance-banner.png" alt="Community Governance" class="section-banner">
-    <div class="copy">
-      <h3>Governance</h3>
-      <p>Decisions Together</p>
-      <p>Polls (X/Telegram) to choose creators, topics, and improvements.</p>
-      <p>Snapshots: active holders recognized monthly.</p>
-      <p>Symbolic Airdrops: Badges/NFTs for participation — not speculation.</p>
-    </div>
-  </section>
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <h1 class="title">The first truly <span class="grad">24/7 crypto radio</span></h1>
+      <p class="subtitle">Open curation. Community-driven. Broadcasting crypto voices around the clock — under open licenses.</p>
+      <img src="https://placehold.co/1200x600/0b0b0f/7c3aed?text=DecentralizedTV" alt="DecentralizedTV">
+    </section>
 
-  <!-- Social Links -->
-  <section id="social">
-    <h2>Follow DCTV</h2>
-    <div class="social-links">
-      <a href="https://x.com/YOUR_PROFILE" target="_blank">
-        <img src="assets/x-icon.png" alt="X (Twitter)">
-      </a>
-      <a href="https://t.me/YOUR_TELEGRAM" target="_blank">
-        <img src="assets/telegram-icon.png" alt="Telegram">
-      </a>
-      <a href="https://github.com/YOUR_GITHUB" target="_blank">
-        <img src="assets/github-icon.png" alt="GitHub">
-      </a>
-    </div>
-  </section>
+    <!-- WHY -->
+    <section id="why" class="section panel">
+      <div class="grid">
+        <div class="card">
+          <h3>Open Curation</h3>
+          <p class="muted">Transparent selection. Anyone can propose talks, clips, and creators.</p>
+        </div>
+        <div class="card">
+          <h3>Community-First</h3>
+          <p class="muted">Decisions shaped by people, not corporations.</p>
+        </div>
+        <div class="card">
+          <h3>Open Licenses</h3>
+          <p class="muted">We prioritize CC0, CC BY, and CC BY-SA content. Credits are public.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Credits & Licenses -->
-  <section id="credits">
-    <img src="assets/credits-banner.png" alt="Credits & Licenses" class="section-banner">
-    <div class="credits-list">
-      <p>“The Internet of Money — Andreas M. Antonopoulos — CC BY 3.0 — Source: archive.org”</p>
-    </div>
-  </section>
+    <!-- GOVERNANCE -->
+    <section id="governance" class="section">
+      <img class="img" src="https://placehold.co/1200x300/0b0b0f/00e5ff?text=Community+Governance" alt="Community Governance" style="margin-bottom:20px;">
 
-  <!-- Footer -->
-  <footer>
-    <p>🌍 Made by the community, for the community 🚀</p>
-  </footer>
+      <div class="grid" style="margin-top:12px">
+        <div class="card">
+          <h3>Decisions Together</h3>
+          <p class="muted">Polls (X/Telegram) to pick creators, topics, and improvements.</p>
+        </div>
+        <div class="card">
+          <h3>Snapshots</h3>
+          <p class="muted">Monthly holder snapshots to recognize active members.</p>
+        </div>
+        <div class="card">
+          <h3>Symbolic Airdrops</h3>
+          <p class="muted">Badges/NFTs as recognition for participation — not speculation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDITS -->
+    <section class="section panel">
+      <h2 class="title" style="font-size:28px;margin:0 0 8px">Credits & Licenses</h2>
+      <p class="muted">Creative Commons sources we use (examples):</p>
+      <div class="card">
+        <p class="muted">“The Internet of Money — Andreas M. Antonopoulos — CC BY 3.0 — Source: archive.org”</p>
+      </div>
+    </section>
+
+    <footer>© 2025 DCTV — No premine. No backdoors. Community first.</footer>
+  </main>
 </body>
 </html>
