@@ -4,67 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DecentralizedTV</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <h1>DecentralizedTV</h1>
-    <p>A primeira rádio/TV cripto 24/7 da comunidade</p>
-  </header>
-
-  <!-- Transmissão ao vivo -->
-  <section id="dctv-live">
-    <h2>🔥 DecentralizedTV Live</h2>
-    <div class="video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-      <iframe src="https://pump.fun/live/SEU_LINK_AQUI"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              style="position:absolute;top:0;left:0;width:100%;height:100%;">
-      </iframe>
-    </div>
-  </section>
-
-  <!-- Community Governance -->
-  <section id="governance">
-    <img src="assets/community-governance-banner.png" alt="Community Governance" class="section-banner">
-    <div class="copy">
-      <h3>Governance</h3>
-      <p>Decisions Together</p>
-      <p>Polls (X/Telegram) to pick creators, topics, and improvements.</p>
-      <p>Snapshots: Monthly holder snapshots to recognize active members.</p>
-      <p>Symbolic Airdrops: Badges/NFTs as recognition for participation — not speculation.</p>
-    </div>
-  </section>
-
-  <!-- Social Links -->
-  <section id="social">
-    <h2>Siga a DCTV</h2>
-    <div class="social-links">
-      <a href="https://x.com/SEU_PERFIL" target="_blank">
-        <img src="assets/x-icon.png" alt="X (Twitter)">
-      </a>
-      <a href="https://t.me/SEU_TELEGRAM" target="_blank">
-        <img src="assets/telegram-icon.png" alt="Telegram">
-      </a>
-      <a href="https://github.com/SEU_GITHUB" target="_blank">
-        <img src="assets/github-icon.png" alt="GitHub">
-      </a>
-    </div>
-  </section>
-
-  <!-- Credits & Licenses -->
-  <section id="credits">
-    <img src="assets/credits-banner.png" alt="Credits & Licenses" class="section-banner">
-    <div class="credits-list">
-      <p>“The Internet of Money — Andreas M. Antonopoulos — CC BY 3.0 — Source: archive.org”</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>🌍 Feito da comunidade, para a comunidade 🚀</p>
-  </footer>
-</body>
-</html>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #111;
+      text-align: center;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 2rem 1rem;
+    }
+    h1 { margin: 0; font-size: 2.5rem; }
+    section { padding: 3rem 1rem; }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    .section-banner {
+      max-width: 400px;
+      margin: 0 auto 1.5rem;
+      display: block;
+    }
+    .social-links {
