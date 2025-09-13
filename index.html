@@ -16,7 +16,21 @@
       --brand:#7c3aed; --accent:#00e5ff; --ring:rgba(124,58,237,.25);
     }
     *{box-sizing:border-box} html,body{height:100%}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--text);
+      background: url('https://img.freepik.com/free-vector/blockchain-technology-background_1017-33986.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(11, 11, 15, 0.88); /* overlay escuro */
+      z-index: -1;
+    }
     a{color:inherit;text-decoration:none}
     .container{max-width:1100px;margin:0 auto;padding:24px}
     .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
