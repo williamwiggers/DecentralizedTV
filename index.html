@@ -23,7 +23,6 @@
       position: relative;
       overflow-x:hidden;
     }
-    /* Neon blobs */
     body::before, body::after {
       content:"";
       position:fixed;
@@ -49,7 +48,6 @@
     .btn:hover{background:rgba(255,255,255,.08)}
     .btn.primary{background:linear-gradient(135deg,var(--brand),var(--accent));color:#0b0b0f;border:none;box-shadow:0 0 20px rgba(124,58,237,.5)}
     .hero{padding:50px 20px;text-align:center}
-    .hero img{width:100%;max-height:320px;object-fit:cover;border-radius:16px;margin:20px auto}
     .title{font-size:clamp(32px,5.4vw,56px);line-height:1.02;margin:0;font-weight:800;letter-spacing:-.02em}
     .grad{background:linear-gradient(135deg,#fff,#bda6ff 40%,#00e5ff);-webkit-background-clip:text;background-clip:text;color:transparent}
     .subtitle{margin:12px auto 18px;color:#d7dbe6;max-width:760px;font-size:clamp(15px,2vw,18px)}
@@ -59,10 +57,7 @@
     .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px}
     .card h3{margin:0 0 8px;font-size:18px}
     .muted{color:var(--muted)}
-    .img{width:100%;border-radius:12px;border:1px solid rgba(255,255,255,.06)}
     footer{margin:40px 0 24px;text-align:center;color:var(--muted);font-size:14px}
-
-    /* Mission Block */
     .mission-box {
       max-width: 800px;
       margin: 20px auto 0;
@@ -74,7 +69,6 @@
       color: #e2e6f3;
       font-size: 18px;
       line-height: 1.45;
-      box-shadow: 0 6px 20px rgba(0,0,0,.35);
     }
     .mission-box h2 {
       margin: 0 0 14px;
@@ -82,101 +76,49 @@
       color: var(--accent);
       font-weight: 700;
     }
-    .mission-box p { margin: 10px 0; }
   </style>
 </head>
+
 <body>
-  <header class="container nav">
-    <div class="brand">
-      <div class="logo"><strong>D</strong></div>
-      <div>Decentralized<span style="color:#a6adff">TV</span></div>
+<header class="container nav">
+  <div class="brand">
+    <div class="logo"><strong>D</strong></div>
+    <div>Decentralized<span style="color:#a6adff">TV</span></div>
+  </div>
+  <nav style="display:flex;gap:10px;align-items:center">
+    <a class="btn" href="#why">Why</a>
+    <a class="btn" href="#governance">Governance</a>
+    <a class="btn" href="https://x.com/Decentraliz_TV" target="_blank">X</a>
+    <a class="btn primary" href="/live">▶ Listen Live</a>
+    <a class="btn primary" href="javascript:void(0)" style="opacity:.6;cursor:not-allowed;">
+      $ Buy DCTV (soon)
+    </a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1 class="title">The first truly <span class="grad">24/7 crypto radio</span></h1>
+    <p class="subtitle">Open curation. Community-driven. Broadcasting crypto voices around the clock — under open licenses.</p>
+
+    <div style="margin-top:20px">
+      <a class="btn primary" href="javascript:void(0)" style="font-size:20px;padding:18px 30px;opacity:.7;cursor:not-allowed;">
+        💎 Buy $DCTV (soon)
+      </a>
     </div>
-    <nav style="display:flex;gap:10px;align-items:center">
-      <a class="btn" href="#why">Why</a>
-      <a class="btn" href="#governance">Governance</a>
-      <a class="btn" href="https://x.com/Decentraliz_TV" target="_blank">X</a>
-      <a class="btn primary" href="/live" id="listen">▶ Listen Live</a>
-      <a class="btn primary" href="#buy" id="buy">$ Buy DCTV</a>
-    </nav>
-  </header>
 
-  <main class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <h1 class="title">The first truly <span class="grad">24/7 crypto radio</span></h1>
-      <p class="subtitle">Open curation. Community-driven. Broadcasting crypto voices around the clock — under open licenses.</p>
+    <div class="mission-box">
+      <h2>Our Mission</h2>
+      <p><strong>DecentralizedTV exists to preserve and broadcast the real voice of the crypto ecosystem.</strong></p>
+      <p>We curate public conversations, open lectures, conferences, and historical discussions about Bitcoin, crypto-economics, technology, and the future of global financial systems.</p>
+      <p>In a world of algorithmic manipulation, censorship, and short-term hype, DCTV focuses on <strong>long-form knowledge, open access, and cultural preservation</strong>.</p>
+      <p>All content shared is sourced from public-domain or open-license materials, always respecting creators and attribution.</p>
+      <p><strong>DCTV does not offer financial advice.</strong> We do not promote investments, trading strategies, pump-and-dump schemes, or speculative narratives.</p>
+      <p><em>This is not about price. It’s about memory, education, and decentralization of information.</em></p>
+    </div>
+  </section>
 
-      <!-- CTA: Buy -->
-      <div style="margin-top:20px">
-        <a class="btn primary" href="#buy" style="font-size:20px;padding:18px 30px;">💎 Buy $DCTV</a>
-      </div>
-
-      <!-- OUR MISSION -->
-      <div class="mission-box">
-        <h2>Our Mission</h2>
-        <p><strong>Our mission is simple yet powerful: to decentralize information and give the voice back to the people.</strong></p>
-        <p>We stand against censorship and manipulation, building a space where freedom of expression is not a privilege, but a right.</p>
-        <p>DCTV is powered by fair tokenomics — no hidden traps, no pump-and-dump games, no whales in control.</p>
-        <p>Every decision, every voice, every moment of content is shaped by the community itself.</p>
-        <p><em>Because true decentralization means that the story of crypto is told by everyone, not just the few.</em></p>
-      </div>
-    </section>
-
-    <!-- WHY -->
-    <section id="why" class="section panel">
-      <div class="grid">
-        <div class="card">
-          <h3>Open Curation</h3>
-          <p class="muted">Transparent selection. Anyone can propose talks, clips, and creators.</p>
-        </div>
-        <div class="card">
-          <h3>Community-First</h3>
-          <p class="muted">Decisions shaped by people, not corporations.</p>
-        </div>
-        <div class="card">
-          <h3>Open Licenses</h3>
-          <p class="muted">We prioritize CC0, CC BY, and CC BY-SA content. Credits are public.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- GOVERNANCE -->
-    <section id="governance" class="section">
-      <img class="img" src="https://placehold.co/1200x300/0b0b0f/00e5ff?text=Community+Governance" alt="Community Governance" style="margin-bottom:20px;">
-
-      <div class="grid" style="margin-top:12px">
-        <div class="card">
-          <h3>Decisions Together</h3>
-          <p class="muted">Polls (X/Telegram) to pick creators, topics, and improvements.</p>
-        </div>
-        <div class="card">
-          <h3>Snapshots</h3>
-          <p class="muted">Monthly holder snapshots to recognize active members.</p>
-        </div>
-        <div class="card">
-          <h3>Symbolic Airdrops</h3>
-          <p class="muted">Badges/NFTs as recognition for participation — not speculation.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CREDITS -->
-    <section class="section panel">
-      <h2 class="title" style="font-size:28px;margin:0 0 8px">Credits & Licenses</h2>
-      <p class="muted">Creative Commons sources we use (examples):</p>
-      <div class="card">
-        <p class="muted">“The Internet of Money — Andreas M. Antonopoulos — CC BY 3.0 — Source: archive.org”</p>
-      </div>
-    </section>
-
-    <!-- FOLLOW US ON X -->
-    <section class="section" style="text-align:center">
-      <h2 class="title" style="font-size:26px;margin-bottom:16px">Stay connected</h2>
-      <a class="btn primary" href="https://x.com/Decentraliz_TV" target="_blank" style="font-size:18px; padding:16px 28px;">Follow us on X</a>
-    </section>
-
-    <footer>© 2025 DCTV — No premine. No backdoors. Community first.</footer>
-  </main>
+  <footer>© 2025 DCTV — No premine. No backdoors. Community first.</footer>
+</main>
 </body>
 </html>
-
